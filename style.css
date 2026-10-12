@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef7ff;
+    color: #243447;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+header {
+    text-align: center;
+    background: #168aad;
+    color: white;
+    padding: 25px 15px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 27px;
+}
+
+header p {
+    margin: 0;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 70, 120, 0.08);
+}
+
+.card h2 {
+    color: #126782;
+    margin-top: 0;
+}
+
+.progress-circle {
+    width: 170px;
+    height: 170px;
+    margin: 25px auto;
+    border-radius: 50%;
+    background: conic-gradient(#168aad 0%, #dceaf2 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-content {
+    width: 140px;
+    height: 140px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-content h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.circle-content p {
+    margin: 5px 0;
+}
+
+#total {
+    text-align: center;
+    color: #168aad;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.card > p {
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.stats h3 {
+    color: #168aad;
+    font-size: 18px;
+}
+
+.stats p {
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+}
+
+.buttons button {
+    flex: 1;
+    background: #d8f3ff;
+    color: #126782;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.add-button {
+    width: 100%;
+    margin-top: 12px;
+    background: #168aad;
+    color: white;
+}
+
+.undo-button {
+    width: 100%;
+    margin-top: 10px;
+    background: #edf2f7;
+    color: #243447;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #b8cbd8;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+#history {
+    padding-left: 20px;
+}
+
+#history li {
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    text-align: center;
+    color: #126782;
+    padding: 10px;
+}
+
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .buttons {
+        gap: 6px;
+    }
+
+    .buttons button {
+        padding: 10px 5px;
+        font-size: 13px;
+    }
+}
